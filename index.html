@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estoque - Easter Egg</title>
+    <link rel="stylesheet" href="styler.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+     <div class="container">
+        <div class="header">
+            <h1 class="title">📦 Sistema de Estoque</h1>
+            <p class="subtitle">Versão Corporativa</p>
+        </div>
+        
+        <div class="activation-hint">
+            💡 <strong>Dica para desenvolvedores:</strong> Tente digitar "ESTOQUE" em qualquer lugar da tela...
+        </div>
+        
+        <div class="easter-egg" id="easterEgg">
+            <h2 style="text-align: center; color: black;">🎉 ESTOQUE SECRETO DESCOBERTO! 🎉</h2>
+            <p style="text-align: center; font-size: 1.1em; color: black;">
+                Parabéns! Você encontrou o estoque alternativo da empresa! 
+                <br>Aqui guardamos os itens mais... <em>especiais</em> 😄
+            </p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-name">🧙‍♂️ Motivação do Dev</div>
+                    <div class="product-quantity" id="motivacao">0</div>
+                    <div class="product-description">Unidade: xícaras de café</div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-name">🐛 Bugs Resolvidos</div>
+                    <div class="product-quantity" id="bugs">∞</div>
+                    <div class="product-description">Status: Sempre aparecem mais</div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-name">⏰ Horas de Sono</div>
+                    <div class="product-quantity" id="sono">4.5</div>
+                    <div class="product-description">Crítico: Estoque baixo!</div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-name">🍕 Pizza da Sexta</div>
+                    <div class="product-quantity" id="pizza">1</div>
+                    <div class="product-description">Renovação automática</div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-name">🎯 Deadlines Cumpridos</div>
+                    <div class="product-quantity" id="deadlines">42</div>
+                    <div class="product-description">Pelo menos tentamos!</div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-name">🦄 Código Perfeito</div>
+                    <div class="product-quantity" id="codigo">0</div>
+                    <div class="product-description">Produto mítico</div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="btn" onclick="adicionarMotivacao()">☕ Adicionar Café</button>
+                <button class="btn" onclick="criarBug()">🐛 Criar Bug</button>
+                <button class="btn" onclick="tentarDormir()">😴 Tentar Dormir</button>
+                <button class="btn" onclick="gerarRelatorio()">📊 Relatório Absurdo</button>
+            </div>
+            
+            <div class="stats" id="stats">
+                <h3>📈 Estatísticas do Desenvolvedor</h3>
+                <p>Café consumido hoje: <span id="cafeTotal">0</span> xícaras</p>
+                <p>Bugs criados por acidente: <span id="bugTotal">0</span></p>
+                <p>Tentativas de dormir: <span id="sonoTotal">0</span></p>
+                <p>Status: <span id="statusDev">Sobrevivendo</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="konami-hint">
+        🎮 Easter Egg ativo! Pressione ESC para resetar
+    </div>
+</body>
+</html>
